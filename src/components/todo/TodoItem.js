@@ -13,15 +13,14 @@ class TodoItem extends PureComponent {
 
     render() {
         const { id, title } = this.props;
-        console.log(id);
+
         return (
             <div style={this.getStyle()}>
                 <p>
-                    <input onChange={this.props.toggleComplete.bind(this, id)} type='checkbox'
-                    />
+                    <input type='checkbox' onChange={this.props.toggleComplete.bind(this, id)} checked={this.props.completed}/>
                     {' '}
                     {title}
-                    <button onClick={this.props.deleteTodo.bind(this, id)} style={btnStyle}>x</button>
+                    <button style={btnStyle} onClick={this.props.deleteTodo.bind(this, id)}>x</button>
                 </p>
             </div>
         )
