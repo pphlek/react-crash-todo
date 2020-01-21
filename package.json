@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "homepage": "http://pphlek.github.io/react-crash-todo",
+  "homepage": "http://pphlek.github.io/react-todo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
